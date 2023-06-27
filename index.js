@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(FileUpload());
 app.use(express.static("public"));
 app.use(router);
-// Create table
+// Fungsi untu create table otomatis
 (async () => {
     await db.sync();
 })();
